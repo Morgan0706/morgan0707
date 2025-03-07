@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio with Sidebar</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            background-image: url(Background.jpg);
+        }
+        .container {
+            display: flex;
+            width: 100%;
+        }
+        .sidebar {
+            width: 250px;
+            height: 100vh;
+            background: #333;
+            color: rgb(212, 20, 20);
+            position: fixed;
+            left: -250px;
+            transition: 0.3s;
+            padding-top: 20px;
+        }
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+        .sidebar ul li {
+            padding: 15px;
+        }
+        .sidebar ul li a {
+            color: white;
+            text-decoration: none;
+            display: block;
+        }
+        .sidebar ul li a:hover {
+            background: #575757;
+        }
+        #toggle-btn {
+            position: absolute;
+            top: 15px;
+            right: -40px;
+            background: #333;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+        .content {
+            margin-left: 20px;
+            flex-grow: 1;
+            padding: 20px;
+            margin-left: 250px;
+            transition: 0.3s;
+        }
+        header {
+            display: flex;
+            justify-content: flex-end;
+            padding: 10px;
+        }
+        .profile-img {
+            width: 240px;
+            height: px;
+            border-radius: %;
+        }
+        .sidebar.active {
+            left: 0;
+        }
+        #about, #projects, #contact {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f4f4f4;
+            border-radius: 10px;
+        }
+        #contact a {
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        #contact a:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 768px) {
+            .content {
+                margin-left: 0;
+            }
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const sidebar = document.getElementById("sidebar");
+            const toggleBtn = document.getElementById("toggle-btn");
+            
+            toggleBtn.addEventListener("click", function () {
+                sidebar.classList.toggle("active");
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <nav id="sidebar" class="sidebar">
+            <button id="toggle-btn">☰</button>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="content">
+            <header>
+                <img src="74a6c70a8a2891fd7f730070d5fe1625_1717416061721_18.jpeg" alt="Profile" class="profile-img">
+            </header>
+            
+            <!-- Home Section -->
+            <section id="home">
+                <h1>Welcome to My Portfolio</h1>
+                <p>Morgan Majwe is a dedicated front-end web developer with a background in tourism studies. Passionate about technology and design, i made a bold transition into web development, bringing a keen eye for detail and user experience from the tourism industry. Over the past 10 months, i have been working as a freelance web developer, creating sleek, responsive websites for clients also upgrading my skills with online platforms such as Udemy and CodeCademy. With a strong foundation in HTML, CSS, and JavaScript,  continuously learning and refining skills to build engaging and user-friendly web experiences.</p>
+            </section>
+            
+            <!-- About Section -->
+            <section id="about">
+                <h2>About Me</h2>
+                <p><strong>Name:</strong>Morgan Majwe</p>
+                <p><strong>Skills:</strong> HTML, CSS, JavaScript, etc.</p>
+                <p><strong>Experience:</strong>10 months </p>
+                <p><strong>Education:</strong>Diploma In Tourism Managament (UNISA) Year 2024 </p>
+            </section>
+            
+            <!-- Projects Section -->
+            <section id="projects">
+                <h2>My Projects</h2>
+                <ul>
+                    <li><strong>Passoword Generator 1:</strong> [Password Generator is a simple web application built with HTML, CSS, and JavaScript that allows users to generate strong, random password. Users can customize the password length and include options such as uppercase letters, numbers, and special characters. The interface is clean and user-friendly, ensuring quick and easy password creation for improved security. click here <a href="#">View</a></li>
+                    <li><strong>Netflix Login Page Clone 2:</strong> [Netflix Login Page Clone is a responsive web project built with HTML and CSS that replicates the offical Netflix login page. It features a sleek and modern design with a user-friendly interface, including input fields for email and password, a "Sign in" button, and additional options like "Remember Me" and "Need Help?". The design is fully responsive, ensuring a seamless experience across different devices. click here <a href="#">View</a></li>
+                    <li><strong>Alarm Clock 3:</strong> [Alarm Clock is a wbe application built with HTML,CSS and JavaScript that allows users to set and manage alarms. It features a simple and intuative interface where users can input a time, set an alarm, and receive notifications when the alarm goes off. With a responsive design, it works smootly on both desktop and mobile devices, making it a convenient tool for time management. -click here <a href="#">View</a></li>
+                </ul>
+            </section>
+            
+            <!-- Contact Section -->
+            <section id="contact">
+                <h2>Contact Me</h2>
+                <p><strong>Email:</strong> <a href="htttps://morganmajwe06@gmail.com"target="_blank">morganmajwe06</a></p>
+                <p><strong>Phone:</strong>+27 079 297 5757</p>
+                <p><strong>Location:</strong>1070 Box Fish Street Kaalfontein Midrand 1685</p>
+                <h3>Social Links</h3>
+                <a href="https://github.com/yourprofile" target="_blank">GitHub</a> |
+                <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a> |
+                <a href="https://twitter.com/yourprofile" target="_blank">Twitter</a>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
+
