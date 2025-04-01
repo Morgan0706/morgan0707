@@ -27,7 +27,15 @@
             <h2>About Me</h2>
             <p>Tshwene Morgan Majwe is a dedicated self-taught front-end web developer with a background in tourism studies. Passionate about technology and design, i made a bold transition into web development, bringing a keen eye for detail and user experience from the tourism industry. Over the  past2 years, i have been working as a freelance web developer, creating sleek, responsive websites for clients also upgrading my skills with online platforms such as Udemy and CodeCademy. With a strong foundation in HTML, CSS, and JavaScript, I continuously learn and refining my skills to build engaging and user-friendly web experiences.</p>
             <p><strong>Name:</strong> Morgan Majwe</p>
-            <p><strong>Skills:</strong> HTML, CSS, JavaScript, Reactjs, Wordpress, GitHub, PHP </p>
+            <p><strong>Skills:</strong> 
+                <div class="skills">
+            <img src="html.png" alt="HTML">
+            <img src="css.png" alt="CSS">
+            <img src="js.png" alt="JavaScript">
+            <img src="react.png" alt="React">
+            <img src="nextjs.png" alt="Next.js">
+            <img src="tailwind.png" alt="Tailwind CSS">
+        </div>
             <p><strong>Experience:</strong> 2 Years </p>
             <p><strong>Education:</strong>Diploma In Tourism Managament (UNISA)  </p>
             <p><strong>My Certificates:</strong></p>
@@ -54,19 +62,22 @@
     </section>
 
         <!-- Contact Section -->
-        <section id="contact">
-            <h2>Contact Me</h2>
-            <p>Email: morganmajwe06@gmail.com</p>
+       <div class="contact">
+            <p>Location: 1070 Box Fish Street Kaalfontein Midrand 1685</p>
+            <p>Email:morganmajwe06@gmail.com </p>
             <p>Phone No: (+27) 79 297 5757</p>
-            <p>Location:1070 Box Fish Street Kaalfontein Midrand 1685</p>
-            
-            
-        </section>
+           <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn">Send</button>
+            </form>
     </div>
 
     <!-- Footer -->
     <footer>
         <p>&copy; 2025 Morgan Majwe. All rights reserved.</p>
+        <a href="resume.pdf" class="btn" download>Download Resume</a>
     </footer>
 
     <script src="Porfolio.js"></script>
