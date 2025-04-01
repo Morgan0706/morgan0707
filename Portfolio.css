@@ -1,14 +1,14 @@
 /* General Styles */
-body {
+ body {
             font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: white; /* Plain background */
             margin: 0;
-            padding: 0;
-            background: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet);
-            background-size: 400% 400%;
-            animation: rainbow 10s infinite linear;
-            
-            text-align: center;
-        }
+ }
  .skills-container {
             text-align: center;
         }
