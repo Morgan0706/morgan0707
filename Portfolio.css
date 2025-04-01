@@ -6,7 +6,7 @@ body {
             background: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet);
             background-size: 400% 400%;
             animation: rainbow 10s infinite linear;
-            color: white;
+            
             text-align: center;
         }
 .skills-container {
