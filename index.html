@@ -10,94 +10,103 @@
 </head>
 <body>
 
-    <!-- Header Section -->
-    <div class="header">
-        <img src="https://via.placeholder.com/150" alt="Profile Image" class="profile-img">
-        <div class="welcome-text">Welcome to My Portfolio</div>
-        <h1>Hi, I'm [Your Name]</h1>
-    </div>
+    <!-- Background Animation -->
+    <div class="background-animation"></div>
+
+    <!-- Header -->
+    <header>
+        <h1>Welcome to My Portfolio</h1>
+        <p>Your future front-end developer</p>
+    </header>
+
+    <!-- Profile Section -->
+    <section class="profile">
+        <img src="profile.jpg" alt="Profile Image">
+        <h2>John Doe</h2>
+    </section>
+
+    <!-- Welcome Section -->
+    <section class="welcome">
+        <h2>Welcome to My Portfolio</h2>
+        <p>This is where I showcase my projects, skills, and experience as a front-end developer.</p>
+    </section>
 
     <!-- About Me Section -->
-    <div class="about-me">
-        <h2>About Me</h2>
-        <p>
-            I am a passionate front-end developer with a strong interest in creating beautiful and functional websites. 
-            I specialize in HTML, CSS, JavaScript, and React.js. I am always eager to learn new technologies and apply 
-            them to my projects. In addition to development, I have a background in design and user experience.
-        </p>
-    </div>
+    <section class="about-me">
+        <h3>About Me</h3>
+        <p>Hello, I'm John Doe. I'm a passionate front-end developer who loves creating clean, functional websites. I have experience with various front-end technologies and I enjoy solving problems with code.</p>
+    </section>
 
     <!-- Skills Section -->
-    <div class="skills">
-        <h2>Skills</h2>
+    <section class="skills">
+        <h3>Skills</h3>
         <ul class="skills-list">
             <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML"> HTML</li>
             <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS"> CSS</li>
             <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript"> JavaScript</li>
-            <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React"> React.js</li>
-            <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git"> Git</li>
+            <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React"> React</li>
         </ul>
-    </div>
+    </section>
 
     <!-- Projects Section -->
-    <div class="projects">
-        <h2>Projects</h2>
-        <div class="projects-list">
-            <div class="project-card">
-                <h3>Project 1</h3>
-                <p>Description of Project 1</p>
-                <a href="#" target="_blank">View Project</a>
-            </div>
-            <div class="project-card">
-                <h3>Project 2</h3>
-                <p>Description of Project 2</p>
-                <a href="#" target="_blank">View Project</a>
-            </div>
-            <div class="project-card">
-                <h3>Project 3</h3>
-                <p>Description of Project 3</p>
-                <a href="#" target="_blank">View Project</a>
-            </div>
-            <div class="project-card">
-                <h3>Project 4</h3>
-                <p>Description of Project 4</p>
-                <a href="#" target="_blank">View Project</a>
-            </div>
+    <section class="projects">
+        <h3>My Projects</h3>
+        <div class="project">
+            <img src="project1.jpg" alt="Project 1">
+            <h4>Project 1</h4>
+            <p>A project description goes here.</p>
         </div>
-    </div>
+        <div class="project">
+            <img src="project2.jpg" alt="Project 2">
+            <h4>Project 2</h4>
+            <p>A project description goes here.</p>
+        </div>
+        <div class="project">
+            <img src="project3.jpg" alt="Project 3">
+            <h4>Project 3</h4>
+            <p>A project description goes here.</p>
+        </div>
+        <div class="project">
+            <img src="project4.jpg" alt="Project 4">
+            <h4>Project 4</h4>
+            <p>A project description goes here.</p>
+        </div>
+    </section>
 
     <!-- Education Section -->
-    <div class="education">
-        <h2>Education</h2>
-        <p>Bachelor's Degree in Computer Science from XYZ University</p>
-    </div>
+    <section class="education">
+        <h3>Education</h3>
+        <ul>
+            <li>Bachelor's in Computer Science - XYZ University</li>
+            <li>Web Development Bootcamp - ABC Institute</li>
+        </ul>
+    </section>
 
-    <!-- Contact Section with CTA -->
-    <div class="contact">
-        <h2>Contact Me</h2>
-        <form class="contact-form">
+    <!-- Contact Section -->
+    <section class="contact">
+        <h3>Contact Me</h3>
+        <form>
             <input type="text" placeholder="Your Name" required>
             <input type="email" placeholder="Your Email" required>
             <textarea placeholder="Your Message" required></textarea>
-            <button class="cta-button" type="submit">Let's Work Together</button>
+            <div class="cta">
+                <a href="#" onclick="alert('Thank you for contacting me!')">Submit</a>
+            </div>
         </form>
-        <div class="contact-details">
-            <p>Email: example@email.com</p>
-            <p>Location: City, Country</p>
-            <p>Phone: +1234567890</p>
-        </div>
-    </div>
+    </section>
 
-    <!-- Footer Section -->
+    <!-- Footer -->
     <footer>
         <div>
             <a href="resume.pdf" download>
-                <img src="https://cdn-icons-png.flaticon.com/512/2991/2991101.png" alt="Download Resume"> Download Resume
+                <img src="https://cdn-icons-png.flaticon.com/512/2991/2991101.png" alt="Download Icon"> Download Resume
             </a>
-            <a href="https://www.linkedin.com" target="_blank">
+            |
+            <a href="https://linkedin.com" target="_blank">
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn"> LinkedIn
             </a>
-            <a href="https://wa.me/1234567890" target="_blank">
+            |
+            <a href="https://wa.me/123456789" target="_blank">
                 <img src="https://cdn-icons-png.flaticon.com/512/174/174879.png" alt="WhatsApp"> WhatsApp
             </a>
         </div>
