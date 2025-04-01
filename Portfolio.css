@@ -9,6 +9,20 @@ body {
             color: white;
             text-align: center;
         }
+.skills-list {
+            list-style: none;
+            padding: 0;
+        }
+        .skills-list li {
+            display: flex;
+            align-items: center;
+            margin: 8px 0;
+        }
+        .skills-list img {
+            width: 24px;
+            height: 24px;
+            margin-right: 10px;
+        }
 @keyframes rainbow {
             0% { background-position: 0% 50%; }
             50% { background-position: 100% 50%; }
