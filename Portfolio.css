@@ -57,12 +57,7 @@
             font-size: 2.5rem;
             text-align: center;
         }
-        .small-arrow {
-            width: 5%; /* Adjust size */
-            height: auto;
-            max-width: 20px;
-            display: inline-block
-            vertical-align: middle;
+        
         }
 
         /* About Me Section */
