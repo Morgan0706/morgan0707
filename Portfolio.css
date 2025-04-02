@@ -61,6 +61,7 @@
             width: 10%; /* Adjust size */
             height: auto;
             max-width: 50px;
+            display: inline-block
             vertical-align: middle;
         }
 
