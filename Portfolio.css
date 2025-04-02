@@ -58,8 +58,9 @@
             text-align: center;
         }
         .small-arrow {
-            width: 6px; /* Adjust size */
+            width: 10%; /* Adjust size */
             height: auto;
+            max-width: 50px;
             vertical-align: middle;
         }
 
